@@ -6,6 +6,21 @@ import oop.inheritance.data.ExpirationDate;
 
 public class VerifoneV240mChipReader{
 
+    private static VerifoneV240mChipReader uniqueInstance;
+
+    private VerifoneV240mChipReader(){
+
+    }
+
+    public static VerifoneV240mChipReader getInstance(){
+
+        if(uniqueInstance == null){
+            uniqueInstance = new VerifoneV240mChipReader();
+        }
+
+        return uniqueInstance;
+    }
+
     public Card readCard(){
         return Card.builder()
                 .account("4558211532252558")

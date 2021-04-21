@@ -5,6 +5,8 @@ import oop.inheritance.data.TransactionResponse;
 
 public class IngenicoModem{
 
+
+
     /**
      * Opens a connection using the modem device
      *
